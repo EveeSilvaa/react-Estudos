@@ -1,5 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const { Resolver } = require("webpack");
+const { Resolve } = require("webpack");
 
 module.exports = {
     devtool: "source-map",
@@ -25,7 +25,7 @@ module.exports = {
              },
         ]
     },
-    Resolver: {
+    Resolve: {
         extensions: [".js", ".jsx"],
     },
     Plugins: [
